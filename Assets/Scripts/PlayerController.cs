@@ -15,6 +15,8 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D _rb;
     private float powerForce = 4f;
     private float maxSpeed = 5f;
+    private float waitTime = .2f;
+    private float nextTime = 0;
 
     [Header("UI")]
     public UIDocument uiDocument;
@@ -24,6 +26,7 @@ public class PlayerController : MonoBehaviour
     [Header("GameObjects")]
     public GameObject rocketFlame;
     public GameObject explosionEffect;
+    public GameObject rocketEffect;
 
 
     void Awake()
@@ -36,8 +39,19 @@ public class PlayerController : MonoBehaviour
         restartButton.clicked += ReloadScene;
     }
 
+    private void FixedUpdate()
+    {
+        if (Input.GetMouseButton(0))
+        {
+            if (Time.time >= nextTime)
+            {
+                GameObject _rocketEffect = Instantiate(rocketEffect, transform.position, transform.rotation);
+                Destroy(_rocketEffect, 1f);
 
-
+                nextTime = Time.time + waitTime;
+            }
+        }
+    }
 
     void Update()
     {
@@ -69,6 +83,8 @@ public class PlayerController : MonoBehaviour
         {
             _rb.linearVelocity = _rb.linearVelocity.normalized * maxSpeed;
         }
+
+        
 
         if (Mouse.current.leftButton.wasPressedThisFrame)
         {

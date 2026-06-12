@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class Obstacle : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class Obstacle : MonoBehaviour
     private float maxSpeed = 150f;
 
     public float maxSpinSpeed = 10f;
+    public GameObject collisionEffect;
 
 
     private void Awake()
@@ -33,9 +35,10 @@ public class Obstacle : MonoBehaviour
         _rb.AddForce(randomDirection * randomSpeed);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        
+        Vector2 contactPoint = collision.GetContact(0).point;
+        GameObject bounceEffect = Instantiate(collisionEffect, transform.position, transform.rotation);
+        Destroy(bounceEffect, 1f);
     }
 }
