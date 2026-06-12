@@ -1121,7 +1121,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27b6f27dcc5f4d048b4ee0c32fe82bdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
+  uiDocument: {fileID: 82008627}
   rocketFlame: {fileID: 434870091}
+  explosionEffect: {fileID: 1091040252170529044, guid: 81968c54e59f6bf429d5408de2f43c4f, type: 3}
 --- !u!50 &856031596
 Rigidbody2D:
   serializedVersion: 5

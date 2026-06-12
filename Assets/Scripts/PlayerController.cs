@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
     public UIDocument uiDocument;
     private Label scoreText;
     public GameObject rocketFlame;
+    public GameObject explosionEffect;
 
 
     void Awake()
@@ -37,6 +38,7 @@ public class PlayerController : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         Destroy(gameObject);
+        Instantiate(explosionEffect,transform.position,transform.rotation);
     }
 
     private void Move()
