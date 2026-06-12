@@ -1,25 +1,45 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SocialPlatforms.Impl;
+using UnityEngine.UIElements;
 
 public class PlayerController : MonoBehaviour
 {
+    private float elapsedTime = 0f;
+    private float score = 0f;
+    private float scoreMultiplier = 10f;
 
     private Rigidbody2D _rb;
     private float powerForce = 4f;
     private float maxSpeed = 5f;
 
+    public UIDocument uiDocument;
+    private Label scoreText;
     public GameObject rocketFlame;
 
 
     void Awake()
     {
         _rb = GetComponent<Rigidbody2D>();
+        scoreText = uiDocument.rootVisualElement.Q<Label>("ScoreLabel");
     }
 
 
 
 
     void Update()
+    {
+        Score();
+        Move();
+    }
+
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Destroy(gameObject);
+    }
+
+    private void Move()
     {
         if (Mouse.current.leftButton.isPressed)
         {
@@ -31,7 +51,7 @@ public class PlayerController : MonoBehaviour
             _rb.AddForce(powerForce * direction);
         }
 
-        if(_rb.linearVelocity.magnitude > maxSpeed)
+        if (_rb.linearVelocity.magnitude > maxSpeed)
         {
             _rb.linearVelocity = _rb.linearVelocity.normalized * maxSpeed;
         }
@@ -44,13 +64,13 @@ public class PlayerController : MonoBehaviour
         {
             rocketFlame.SetActive(false);
         }
-
     }
 
-
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void Score()
     {
-        Destroy(gameObject);
+        elapsedTime += Time.deltaTime;
+        score = Mathf.FloorToInt(elapsedTime * scoreMultiplier);
+        scoreText.text = "Score: " + score;
     }
 
 }
