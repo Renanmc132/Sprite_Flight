@@ -1,0 +1,8 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Label text="cosmic drift" name="MenuText" class="title-text"/>
+    <ui:VisualElement name="MenuButtons" style="flex-grow: 1; align-self: center; justify-content: center; align-items: center; align-content: center;">
+        <ui:Button text="Play" name="PlayButton" class="btn"/>
+        <ui:Button text="Options" name="OptionsButton" class="btn"/>
+        <ui:Button text="Exit" name="ExitButton" class="btn"/>
+    </ui:VisualElement>
+</ui:UXML>

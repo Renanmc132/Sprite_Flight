@@ -1,0 +1,34 @@
+:root {
+}
+
+.title-text {
+    font-size: 150px;
+    -unity-font-definition: url("project://database/Assets/Fonts/ThaleahFat_TTF.ttf?fileID=12800000&guid=585188cdc4600544eb408bee749e4b3a&type=3#ThaleahFat_TTF");
+    -unity-text-align: middle-center;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.btn {
+    background-image: url("project://database/Assets/DEVNIK%202D/2D%20UI%20PIXEL%20BUTTONS/UI%20SIMPLE%20PIXEL%20UNSPLIT.png?fileID=-264501715&guid=a37e8466236089c45b610370218b5353&type=3#BAR3");
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    align-content: center;
+    width: 428px;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0);
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    margin-top: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    font-size: 100px;
+    -unity-font-definition: url("project://database/Assets/Fonts/ThaleahFat_TTF.ttf?fileID=12800000&guid=585188cdc4600544eb408bee749e4b3a&type=3#ThaleahFat_TTF");
+}
+
+.btn:hover {
+    background-image: url("project://database/Assets/DEVNIK%202D/2D%20UI%20PIXEL%20BUTTONS/UI%20SIMPLE%20PIXEL%20UNSPLIT.png?fileID=482729247&guid=a37e8466236089c45b610370218b5353&type=3#BAR2");
+}
