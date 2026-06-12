@@ -1,28 +1,39 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.UIElements;
 
 public class PlayerController : MonoBehaviour
 {
+    [Header("Score")]
     private float elapsedTime = 0f;
     private float score = 0f;
     private float scoreMultiplier = 10f;
 
+    [Header("Movement")]
     private Rigidbody2D _rb;
     private float powerForce = 4f;
     private float maxSpeed = 5f;
 
+    [Header("UI")]
     public UIDocument uiDocument;
+    public Button restartButton;
     private Label scoreText;
+
+    [Header("GameObjects")]
     public GameObject rocketFlame;
     public GameObject explosionEffect;
 
 
     void Awake()
     {
+        
         _rb = GetComponent<Rigidbody2D>();
         scoreText = uiDocument.rootVisualElement.Q<Label>("ScoreLabel");
+        restartButton = uiDocument.rootVisualElement.Q<Button>("RestartButton");
+        restartButton.style.display = DisplayStyle.None;
+        restartButton.clicked += ReloadScene;
     }
 
 
@@ -39,6 +50,7 @@ public class PlayerController : MonoBehaviour
     {
         Destroy(gameObject);
         Instantiate(explosionEffect,transform.position,transform.rotation);
+        restartButton.style.display = DisplayStyle.Flex;
     }
 
     private void Move()
@@ -73,6 +85,11 @@ public class PlayerController : MonoBehaviour
         elapsedTime += Time.deltaTime;
         score = Mathf.FloorToInt(elapsedTime * scoreMultiplier);
         scoreText.text = "Score: " + score;
+    }
+
+    private void ReloadScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
 }
