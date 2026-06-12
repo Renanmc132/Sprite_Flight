@@ -1,3 +1,4 @@
+using NUnit.Framework.Internal;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -10,6 +11,10 @@ public class Obstacle : MonoBehaviour
 
     private float minSpeed = 50f;
     private float maxSpeed = 150f;
+
+    private float updateMinSpeed = 150f;
+    private float updateMaxSpeed = 300f;
+
 
     public float maxSpinSpeed = 10f;
     public GameObject collisionEffect;
@@ -37,6 +42,13 @@ public class Obstacle : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        if(collision.gameObject.tag == "Border")
+        {
+            Vector2 randomDirection = Random.insideUnitCircle;
+            float randomSpeed = Random.Range(updateMinSpeed, updateMaxSpeed);
+            _rb.AddForce(randomDirection * randomSpeed);
+        }
+
         Vector2 contactPoint = collision.GetContact(0).point;
         GameObject bounceEffect = Instantiate(collisionEffect, transform.position, transform.rotation);
         Destroy(bounceEffect, 1f);
