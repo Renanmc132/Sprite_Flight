@@ -9,7 +9,7 @@
 }
 
 .btn {
-    background-image: url("project://database/Assets/DEVNIK%202D/2D%20UI%20PIXEL%20BUTTONS/UI%20SIMPLE%20PIXEL%20UNSPLIT.png?fileID=-264501715&guid=a37e8466236089c45b610370218b5353&type=3#BAR3");
+    background-image: url("project://database/Assets/DEVNIK%202D/2D%20UI%20PIXEL%20BUTTONS/UI%20SIMPLE%20PIXEL%20UNSPLIT.png?fileID=482729247&guid=a37e8466236089c45b610370218b5353&type=3#BAR2");
     align-items: center;
     justify-content: center;
     align-self: center;
@@ -30,5 +30,5 @@
 }
 
 .btn:hover {
-    background-image: url("project://database/Assets/DEVNIK%202D/2D%20UI%20PIXEL%20BUTTONS/UI%20SIMPLE%20PIXEL%20UNSPLIT.png?fileID=482729247&guid=a37e8466236089c45b610370218b5353&type=3#BAR2");
+    background-image: url("project://database/Assets/DEVNIK%202D/2D%20UI%20PIXEL%20BUTTONS/UI%20SIMPLE%20PIXEL%20UNSPLIT.png?fileID=-1397424353&guid=a37e8466236089c45b610370218b5353&type=3#BAR1");
 }

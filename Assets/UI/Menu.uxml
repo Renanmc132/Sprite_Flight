@@ -1,4 +1,5 @@
 <ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/MenuCss.uss?fileID=7433441132597879392&amp;guid=1ed35d2e453f3da41b1b53aebb645b02&amp;type=3"/>
     <ui:Label text="cosmic drift" name="MenuText" class="title-text"/>
     <ui:VisualElement name="MenuButtons" style="flex-grow: 1; align-self: center; justify-content: center; align-items: center; align-content: center;">
         <ui:Button text="Play" name="PlayButton" class="btn"/>

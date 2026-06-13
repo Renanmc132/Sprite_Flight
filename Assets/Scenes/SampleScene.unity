@@ -186,6 +186,7 @@ GameObject:
   m_Component:
   - component: {fileID: 82008628}
   - component: {fileID: 82008627}
+  - component: {fileID: 82008629}
   m_Layer: 5
   m_Name: GameUI
   m_TagString: Untagged
@@ -231,6 +232,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &82008629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 82008626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 130cf6aea2ef987478d7adffa5ae9b9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIFunction
+  uiDocument: {fileID: 82008627}
 --- !u!1 &201557057
 GameObject:
   m_ObjectHideFlags: 0
@@ -1121,10 +1135,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27b6f27dcc5f4d048b4ee0c32fe82bdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
-  uiDocument: {fileID: 82008627}
   rocketFlame: {fileID: 434870091}
   explosionEffect: {fileID: 1091040252170529044, guid: 81968c54e59f6bf429d5408de2f43c4f, type: 3}
   rocketEffect: {fileID: 8633859155416334846, guid: 1e3d0fc7af7aa8f49b9b7537d513a009, type: 3}
+  uiDocument: {fileID: 82008627}
 --- !u!50 &856031596
 Rigidbody2D:
   serializedVersion: 5

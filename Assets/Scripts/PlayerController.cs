@@ -6,10 +6,7 @@ using UnityEngine.UIElements;
 
 public class PlayerController : MonoBehaviour
 {
-    [Header("Score")]
-    private float elapsedTime = 0f;
-    private float score = 0f;
-    private float scoreMultiplier = 10f;
+    
 
     [Header("Movement")]
     private Rigidbody2D _rb;
@@ -18,25 +15,18 @@ public class PlayerController : MonoBehaviour
     private float waitTime = .2f;
     private float nextTime = 0;
 
-    [Header("UI")]
-    public UIDocument uiDocument;
-    public Button restartButton;
-    private Label scoreText;
-
     [Header("GameObjects")]
     public GameObject rocketFlame;
     public GameObject explosionEffect;
     public GameObject rocketEffect;
-
+    public Button restartButton;
+    public UIDocument uiDocument;
 
     void Awake()
     {
-        
-        _rb = GetComponent<Rigidbody2D>();
-        scoreText = uiDocument.rootVisualElement.Q<Label>("ScoreLabel");
         restartButton = uiDocument.rootVisualElement.Q<Button>("RestartButton");
-        restartButton.style.display = DisplayStyle.None;
-        restartButton.clicked += ReloadScene;
+        _rb = GetComponent<Rigidbody2D>();
+        
     }
 
     private void FixedUpdate()
@@ -55,16 +45,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        Score();
         Move();
-    }
-
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        Destroy(gameObject);
-        Instantiate(explosionEffect,transform.position,transform.rotation);
-        restartButton.style.display = DisplayStyle.Flex;
     }
 
     private void Move()
@@ -96,16 +77,13 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void Score()
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        elapsedTime += Time.deltaTime;
-        score = Mathf.FloorToInt(elapsedTime * scoreMultiplier);
-        scoreText.text = "Score: " + score;
+        Destroy(gameObject);
+        Instantiate(explosionEffect, transform.position, transform.rotation);
+        restartButton.style.display = DisplayStyle.Flex;
     }
 
-    private void ReloadScene()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    }
+
 
 }
