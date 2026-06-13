@@ -1138,6 +1138,7 @@ MonoBehaviour:
   rocketFlame: {fileID: 434870091}
   explosionEffect: {fileID: 1091040252170529044, guid: 81968c54e59f6bf429d5408de2f43c4f, type: 3}
   rocketEffect: {fileID: 8633859155416334846, guid: 1e3d0fc7af7aa8f49b9b7537d513a009, type: 3}
+  borders: {fileID: 1030619411}
   uiDocument: {fileID: 82008627}
 --- !u!50 &856031596
 Rigidbody2D:

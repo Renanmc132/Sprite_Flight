@@ -14,19 +14,18 @@ public class PlayerController : MonoBehaviour
     private float maxSpeed = 5f;
     private float waitTime = .2f;
     private float nextTime = 0;
+    public static bool playerDeath = false;
 
     [Header("GameObjects")]
     public GameObject rocketFlame;
     public GameObject explosionEffect;
     public GameObject rocketEffect;
-    public Button restartButton;
-    public UIDocument uiDocument;
+    public GameObject borders;
 
     void Awake()
     {
-        restartButton = uiDocument.rootVisualElement.Q<Button>("RestartButton");
         _rb = GetComponent<Rigidbody2D>();
-        
+        playerDeath = false;
     }
 
     private void FixedUpdate()
@@ -80,8 +79,10 @@ public class PlayerController : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         Destroy(gameObject);
+        Destroy(borders);
+        playerDeath = true;
         Instantiate(explosionEffect, transform.position, transform.rotation);
-        restartButton.style.display = DisplayStyle.Flex;
+        
     }
 
 
