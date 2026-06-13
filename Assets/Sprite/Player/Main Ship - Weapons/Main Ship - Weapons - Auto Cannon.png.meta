@@ -1,25 +1,28 @@
 fileFormatVersion: 2
-guid: 0264b9a9effa6894282a11f3725dcbee
+guid: 1f655610a28c1494dad9f5f3a5c1cf80
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2869836826937132121
-    second: Main Ship - Engines - Base Engine - Idle_0
+      213: 611724665972262944
+    second: Main Ship - Weapons - Auto Cannon_0
   - first:
-      213: -3642214747636528
-    second: Main Ship - Engines - Base Engine - Idle_1
+      213: -1375728824914041583
+    second: Main Ship - Weapons - Auto Cannon_1
   - first:
-      213: -5619748045472601254
-    second: Main Ship - Engines - Base Engine - Idle_2
+      213: 6307077810593842542
+    second: Main Ship - Weapons - Auto Cannon_2
   - first:
-      213: -4267442292630722726
-    second: Main Ship - Engines - Base Engine - Idle_3
+      213: 7220479240494759323
+    second: Main Ship - Weapons - Auto Cannon_3
   - first:
-      213: 2712709625665527618
-    second: Main Ship - Engines - Base Engine - Idle_4
+      213: -868710662863721769
+    second: Main Ship - Weapons - Auto Cannon_4
   - first:
-      213: 551752801442154573
-    second: Main Ship - Engines - Base Engine - Idle_5
+      213: 4672232222400279883
+    second: Main Ship - Weapons - Auto Cannon_5
+  - first:
+      213: 439537449767786856
+    second: Main Ship - Weapons - Auto Cannon_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -52,7 +55,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -66,7 +69,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -90,7 +93,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -128,13 +131,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Main Ship - Engines - Base Engine - Idle_0
+      name: Main Ship - Weapons - Auto Cannon_0
       rect:
         serializedVersion: 2
-        x: 13
-        y: 11
-        width: 7
-        height: 7
+        x: 11
+        y: 15
+        width: 26
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,20 +146,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9540ce89365b3d720800000000000000
-      internalID: 2869836826937132121
+      spriteID: 0280f97b7584d7800800000000000000
+      internalID: 611724665972262944
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Main Ship - Engines - Base Engine - Idle_1
+      name: Main Ship - Weapons - Auto Cannon_1
       rect:
         serializedVersion: 2
-        x: 28
-        y: 11
-        width: 7
-        height: 7
+        x: 59
+        y: 15
+        width: 26
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,20 +168,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0dc75cbcc6f03fff0800000000000000
-      internalID: -3642214747636528
+      spriteID: 115abb33ced68ece0800000000000000
+      internalID: -1375728824914041583
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Main Ship - Engines - Base Engine - Idle_2
+      name: Main Ship - Weapons - Auto Cannon_2
       rect:
         serializedVersion: 2
-        x: 61
-        y: 10
-        width: 7
-        height: 8
+        x: 107
+        y: 15
+        width: 26
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,20 +190,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a5be8666de4a202b0800000000000000
-      internalID: -5619748045472601254
+      spriteID: e65c1373add378750800000000000000
+      internalID: 6307077810593842542
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Main Ship - Engines - Base Engine - Idle_3
+      name: Main Ship - Weapons - Auto Cannon_3
       rect:
         serializedVersion: 2
-        x: 76
-        y: 10
-        width: 7
-        height: 8
+        x: 153
+        y: 15
+        width: 28
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -209,20 +212,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a57644048dff6c4c0800000000000000
-      internalID: -4267442292630722726
+      spriteID: b9db5cd0d9b443460800000000000000
+      internalID: 7220479240494759323
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Main Ship - Engines - Base Engine - Idle_4
+      name: Main Ship - Weapons - Auto Cannon_4
       rect:
         serializedVersion: 2
-        x: 109
-        y: 11
-        width: 7
-        height: 8
+        x: 200
+        y: 15
+        width: 31
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -231,20 +234,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 24f9390380b75a520800000000000000
-      internalID: 2712709625665527618
+      spriteID: 7dae9673148b1f3f0800000000000000
+      internalID: -868710662863721769
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Main Ship - Engines - Base Engine - Idle_5
+      name: Main Ship - Weapons - Auto Cannon_5
       rect:
         serializedVersion: 2
-        x: 124
-        y: 11
-        width: 7
-        height: 8
+        x: 251
+        y: 15
+        width: 29
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -253,8 +256,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d4849c5ef3838a700800000000000000
-      internalID: 551752801442154573
+      spriteID: b457d44a37a17d040800000000000000
+      internalID: 4672232222400279883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Ship - Weapons - Auto Cannon_6
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 15
+        width: 26
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 869d3e65bfc891600800000000000000
+      internalID: 439537449767786856
       vertices: []
       indices: 
       edges: []
@@ -273,12 +298,13 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Main Ship - Engines - Base Engine - Idle_0: 2869836826937132121
-      Main Ship - Engines - Base Engine - Idle_1: -3642214747636528
-      Main Ship - Engines - Base Engine - Idle_2: -5619748045472601254
-      Main Ship - Engines - Base Engine - Idle_3: -4267442292630722726
-      Main Ship - Engines - Base Engine - Idle_4: 2712709625665527618
-      Main Ship - Engines - Base Engine - Idle_5: 551752801442154573
+      Main Ship - Weapons - Auto Cannon_0: 611724665972262944
+      Main Ship - Weapons - Auto Cannon_1: -1375728824914041583
+      Main Ship - Weapons - Auto Cannon_2: 6307077810593842542
+      Main Ship - Weapons - Auto Cannon_3: 7220479240494759323
+      Main Ship - Weapons - Auto Cannon_4: -868710662863721769
+      Main Ship - Weapons - Auto Cannon_5: 4672232222400279883
+      Main Ship - Weapons - Auto Cannon_6: 439537449767786856
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

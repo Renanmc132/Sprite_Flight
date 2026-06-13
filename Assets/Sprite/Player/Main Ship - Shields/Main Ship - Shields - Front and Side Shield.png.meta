@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: 0264b9a9effa6894282a11f3725dcbee
+guid: d3f6640ce70e5434bb732ff64b39bab0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2869836826937132121
-    second: Main Ship - Engines - Base Engine - Idle_0
+      213: 8750295261629121697
+    second: Main Ship - Shields - Front and Side Shield_0
   - first:
-      213: -3642214747636528
-    second: Main Ship - Engines - Base Engine - Idle_1
+      213: 8505258775091169397
+    second: Main Ship - Shields - Front and Side Shield_1
   - first:
-      213: -5619748045472601254
-    second: Main Ship - Engines - Base Engine - Idle_2
+      213: 2975968906857299237
+    second: Main Ship - Shields - Front and Side Shield_2
   - first:
-      213: -4267442292630722726
-    second: Main Ship - Engines - Base Engine - Idle_3
+      213: 8479493046639426775
+    second: Main Ship - Shields - Front and Side Shield_3
   - first:
-      213: 2712709625665527618
-    second: Main Ship - Engines - Base Engine - Idle_4
+      213: -1488889956880743766
+    second: Main Ship - Shields - Front and Side Shield_4
   - first:
-      213: 551752801442154573
-    second: Main Ship - Engines - Base Engine - Idle_5
+      213: 223991586006138174
+    second: Main Ship - Shields - Front and Side Shield_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -52,7 +52,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -66,7 +66,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -90,7 +90,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -128,13 +128,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Main Ship - Engines - Base Engine - Idle_0
+      name: Main Ship - Shields - Front and Side Shield_0
       rect:
         serializedVersion: 2
-        x: 13
-        y: 11
-        width: 7
-        height: 7
+        x: 6
+        y: 18
+        width: 52
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,20 +143,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9540ce89365b3d720800000000000000
-      internalID: 2869836826937132121
+      spriteID: 1a4003ded2b4f6970800000000000000
+      internalID: 8750295261629121697
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Main Ship - Engines - Base Engine - Idle_1
+      name: Main Ship - Shields - Front and Side Shield_1
       rect:
         serializedVersion: 2
-        x: 28
-        y: 11
-        width: 7
-        height: 7
+        x: 70
+        y: 18
+        width: 52
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,20 +165,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0dc75cbcc6f03fff0800000000000000
-      internalID: -3642214747636528
+      spriteID: 578451c0bcfb80670800000000000000
+      internalID: 8505258775091169397
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Main Ship - Engines - Base Engine - Idle_2
+      name: Main Ship - Shields - Front and Side Shield_2
       rect:
         serializedVersion: 2
-        x: 61
-        y: 10
-        width: 7
-        height: 8
+        x: 134
+        y: 18
+        width: 52
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,20 +187,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a5be8666de4a202b0800000000000000
-      internalID: -5619748045472601254
+      spriteID: 52d36d314f3cc4920800000000000000
+      internalID: 2975968906857299237
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Main Ship - Engines - Base Engine - Idle_3
+      name: Main Ship - Shields - Front and Side Shield_3
       rect:
         serializedVersion: 2
-        x: 76
-        y: 10
-        width: 7
-        height: 8
+        x: 198
+        y: 18
+        width: 52
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -209,20 +209,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a57644048dff6c4c0800000000000000
-      internalID: -4267442292630722726
+      spriteID: 7dc7658eff53da570800000000000000
+      internalID: 8479493046639426775
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Main Ship - Engines - Base Engine - Idle_4
+      name: Main Ship - Shields - Front and Side Shield_4
       rect:
         serializedVersion: 2
-        x: 109
-        y: 11
-        width: 7
-        height: 8
+        x: 262
+        y: 18
+        width: 52
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -231,20 +231,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 24f9390380b75a520800000000000000
-      internalID: 2712709625665527618
+      spriteID: aa20a720976665be0800000000000000
+      internalID: -1488889956880743766
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Main Ship - Engines - Base Engine - Idle_5
+      name: Main Ship - Shields - Front and Side Shield_5
       rect:
         serializedVersion: 2
-        x: 124
-        y: 11
-        width: 7
-        height: 8
+        x: 326
+        y: 18
+        width: 52
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -253,8 +253,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d4849c5ef3838a700800000000000000
-      internalID: 551752801442154573
+      spriteID: e3d72942927cb1300800000000000000
+      internalID: 223991586006138174
       vertices: []
       indices: 
       edges: []
@@ -273,12 +273,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Main Ship - Engines - Base Engine - Idle_0: 2869836826937132121
-      Main Ship - Engines - Base Engine - Idle_1: -3642214747636528
-      Main Ship - Engines - Base Engine - Idle_2: -5619748045472601254
-      Main Ship - Engines - Base Engine - Idle_3: -4267442292630722726
-      Main Ship - Engines - Base Engine - Idle_4: 2712709625665527618
-      Main Ship - Engines - Base Engine - Idle_5: 551752801442154573
+      Main Ship - Shields - Front and Side Shield_0: 8750295261629121697
+      Main Ship - Shields - Front and Side Shield_1: 8505258775091169397
+      Main Ship - Shields - Front and Side Shield_2: 2975968906857299237
+      Main Ship - Shields - Front and Side Shield_3: 8479493046639426775
+      Main Ship - Shields - Front and Side Shield_4: -1488889956880743766
+      Main Ship - Shields - Front and Side Shield_5: 223991586006138174
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
