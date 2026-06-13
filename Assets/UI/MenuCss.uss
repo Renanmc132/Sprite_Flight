@@ -23,7 +23,7 @@
     border-left-width: 0;
     margin-top: 15px;
     margin-right: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 0;
     margin-left: 15px;
     font-size: 100px;
     -unity-font-definition: url("project://database/Assets/Fonts/ThaleahFat_TTF.ttf?fileID=12800000&guid=585188cdc4600544eb408bee749e4b3a&type=3#ThaleahFat_TTF");
