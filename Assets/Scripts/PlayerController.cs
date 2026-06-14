@@ -6,15 +6,24 @@ using UnityEngine.UIElements;
 
 public class PlayerController : MonoBehaviour
 {
-    
+    [Header("Player Variables")]
+    public static bool playerDeath = false;
+    private int playerLife = 4;
+    private float waitTime = .2f;
+    private float nextTime = 0;
+
+    [Header("Sprites")]
+    private int currentAnimation;
+    private Animator _anim;
+    private int baseShip = Animator.StringToHash("BaseShip");
+    private int damage1Ship = Animator.StringToHash("1DamageShip");
+    private int damage2Ship = Animator.StringToHash("2DamageShip");
+    private int damage3Ship = Animator.StringToHash("3DamageShip");
 
     [Header("Movement")]
     private Rigidbody2D _rb;
     private float powerForce = 4f;
     private float maxSpeed = 5f;
-    private float waitTime = .2f;
-    private float nextTime = 0;
-    public static bool playerDeath = false;
 
     [Header("GameObjects")]
     public GameObject rocketFlame;
@@ -24,6 +33,7 @@ public class PlayerController : MonoBehaviour
 
     void Awake()
     {
+        _anim = GetComponent<Animator>();
         _rb = GetComponent<Rigidbody2D>();
         playerDeath = false;
     }
@@ -45,6 +55,13 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         Move();
+
+        var animation = GetAnimation();
+
+        if (animation == currentAnimation) return;
+        _anim.CrossFade(animation, 0, 0);
+        currentAnimation = animation;
+
     }
 
     private void Move()
@@ -78,13 +95,27 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Destroy(gameObject);
-        Destroy(borders);
-        playerDeath = true;
-        Instantiate(explosionEffect, transform.position, transform.rotation);
+        playerLife--;
+        if(playerLife <= 0)
+        {
+            Destroy(gameObject);
+            Destroy(borders);
+            playerDeath = true;
+            Instantiate(explosionEffect, transform.position, transform.rotation);
+        }
         
     }
 
+    private int GetAnimation()
+    {
+        int currentSprite = baseShip;
 
+        if (playerLife == 4) return currentSprite = baseShip;
+        if (playerLife == 3) return currentSprite = damage1Ship;
+        if (playerLife == 2) return currentSprite = damage2Ship;
+        if (playerLife == 1) return currentSprite = damage3Ship;
+
+        return currentSprite;
+    }
 
 }
