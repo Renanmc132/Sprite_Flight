@@ -15,7 +15,7 @@ public class UIFunction : MonoBehaviour
 
     [Header("Score")]
     private float elapsedTime = 0f;
-    private float score = 0f;
+    public static float score = 0f;
     private float scoreMultiplier = 10f;
 
     private void Awake()

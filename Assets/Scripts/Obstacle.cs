@@ -15,7 +15,6 @@ public class Obstacle : MonoBehaviour
     private float updateMinSpeed = 150f;
     private float updateMaxSpeed = 300f;
 
-
     public float maxSpinSpeed = 10f;
     public GameObject collisionEffect;
 
@@ -53,4 +52,10 @@ public class Obstacle : MonoBehaviour
         GameObject bounceEffect = Instantiate(collisionEffect, transform.position, transform.rotation);
         Destroy(bounceEffect, 1f);
     }
+
+    
+
+
+
+
 }

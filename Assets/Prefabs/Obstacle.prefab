@@ -85,7 +85,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -712631045867808456, guid: b670ab75dde984907b8570040daa08c5, type: 3}
-  m_Color: {r: 1, g: 0.5430124, b: 0, a: 1}
+  m_Color: {r: 0.764151, g: 0.47473198, b: 0.13336597, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -188,3 +188,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Obstacle
   maxSpinSpeed: 10
   collisionEffect: {fileID: 4147044029814503995, guid: c8ce4759d7c95a145a9ff42d83cff56d, type: 3}
+  spawnerObject: {fileID: 8419785163210651881, guid: 81479988c1fb7f445819936573968dea, type: 3}
+  obstaclePrefab: {fileID: 8053384857948811509}
